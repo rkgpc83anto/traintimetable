@@ -1,0 +1,35 @@
+.smartphone-hover-effect_slide {
+    position: relative;
+    display:inline-block;
+    padding: 2px 2px;
+    font-size: 80px;
+    width:153px;
+    height: 500px;
+    text-align: center;
+    vertical-align: top;
+    user-select: none;
+    color: #ded5c0;
+    border: 1px #ded5c0 solid;
+    transition: 0.2s ease;
+  }
+  
+  .smartphone-hover-effect_slide::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    content: "";
+    background-color: #ded5c0;
+    transition: 0.2s ease;
+  }
+  
+  .smartphone-hover-effect_slide:hover {
+    color: #451722;
+  }
+  
+  .smartphone-hover-effect_slide:hover::before {
+    width: 100%;
+    z-index:-1;
+  }

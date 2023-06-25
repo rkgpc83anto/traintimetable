@@ -1,0 +1,9 @@
+.smartphone-button03{
+    position:absolute;
+    top: 140px;
+    left:450px;
+    font-size:50px;
+    font-weight: bold;
+    border-color: #fff;
+    padding:2px;
+}

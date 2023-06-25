@@ -1,0 +1,8 @@
+.smartphone-button2{
+    position:absolute;
+    top: 1200px;
+    left: 280px;
+    width: 700px;
+    height: 180px;
+    z-index:1;
+}

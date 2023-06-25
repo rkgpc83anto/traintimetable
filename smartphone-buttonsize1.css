@@ -1,0 +1,9 @@
+.smartphone-buttonsize1{
+
+    width: 800px;
+    height: 200px;
+    border: 1px solid #000;
+    background:#3e3e3e;
+    text-align:top;
+    z-index:1;
+}

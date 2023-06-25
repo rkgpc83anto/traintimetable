@@ -1,0 +1,35 @@
+.hover-effect_slide1 {
+    position: relative;
+    display:inline-block;
+    padding: 2px 2px;
+    font-size: 50px;
+    width:50px;
+    height: 200px;
+    text-align:center;
+    vertical-align: top;
+    user-select: none;
+    color: #00b3ff;
+    border: 1px #ded5c0 solid;
+    transition: 0.2s ease;
+  }
+  
+  .hover-effect_slide1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    content: "";
+    background-color: #00b3ff;
+    transition: 0.2s ease;
+  }
+  
+  .hover-effect_slide1:hover {
+    color: #fff;
+  }
+  
+  .hover-effect_slide1:hover::before {
+    width: 100%;
+    z-index:-1;
+  }
