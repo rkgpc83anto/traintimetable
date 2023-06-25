@@ -1,0 +1,9 @@
+.daisenpatsu2{
+    position:absolute;
+    top:1170px;
+    left:155px;
+    font-size:100px;
+    color: #fff;
+    font-family:Arial;
+    z-index:1;
+}

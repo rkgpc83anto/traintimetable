@@ -1,0 +1,32 @@
+.daibbs12{
+    position: absolute;
+    align-items: center;
+    background: #3e3e3e;
+    color: #fff;
+    display: flex;
+    top:1183px;
+    left:843px;
+    height: 45px;
+    line-height: 80px;
+    overflow:hidden;
+    width: 397.5px;
+    white-space:nowrap;
+    margin-top: 100px;
+    font-family: ＭＳ ゴシック;
+    z-index: 1;
+    }
+    .daibbs12 ul {
+    animation: flowing 60s linear infinite;
+    font-size: 30px;
+    transform:translateX(100%);
+    margin: 0;
+    padding: 0;
+    }
+    .daibbs12 ul li{
+    display: inline-block;
+    padding-right: 450px;
+    }
+    @keyframes flowing {
+    0% { transform:translateX(4.5%); }
+    100% { transform:translateX(-100%); }
+    }
