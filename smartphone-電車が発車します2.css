@@ -1,0 +1,45 @@
+.smartphone-myChangeImage2 img{
+  position: absolute;
+  top: 1577px;
+  left: 25px;
+  z-index:1;
+  animation: ChangeImage 2s infinite;
+  opacity: 0;
+}
+
+@keyframes ChangeImage{
+  0%{ opacity: 1;}
+  4%{ opacity: 1;}
+  8%{ opacity: 1;}
+  12%{ opacity: 1;}
+  16%{ opacity: 1;}
+  20%{ opacity: 1;}
+  24%{ opacity: 1;}
+  28%{ opacity: 1;}
+  32%{ opacity: 1;}
+  36%{ opacity: 1;}
+  40%{ opacity: 1;}
+  44%{ opacity: 1;}
+  48%{ opacity: 1;}
+  50%{ opacity: 0;}
+  52%{ opacity: 0;}
+  56%{ opacity: 0;}
+  60%{ opacity: 0;}
+  64%{ opacity: 0;}
+  68%{ opacity: 0;}
+  72%{ opacity: 0;}
+  76%{ opacity: 0;}
+  80%{ opacity: 0;}
+  84%{ opacity: 0;}
+  88%{ opacity: 0;}
+  92%{ opacity: 0;}
+  96%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+
+.smartphone-myChangeImage2 img:nth-of-type(1) {
+   animation-delay: 0s;
+}
+.smartphone-myChangeImage2 img:nth-of-type(2) {
+  animation-delay: 1s;
+}
