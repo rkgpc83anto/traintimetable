@@ -1,7 +1,7 @@
 .smartphone-myChangeImage2 img{
   position: absolute;
   top: 1577px;
-  left: 25px;
+  left: 23px;
   z-index:1;
   animation: ChangeImage 2s infinite;
   opacity: 0;
