@@ -16,7 +16,7 @@
     z-index: 1;
     }
     .bbslast1 ul {
-    animation: flowing 30s linear infinite;
+    animation: flowing 60s linear infinite;
     font-size: 80px;
     transform:translateX(100%);
     margin: 0;
