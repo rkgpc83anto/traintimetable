@@ -1,13 +1,13 @@
 .bbslast1{
     position: absolute;
     align-items: center;
-    background: #ff0;
-    color: #000;
+    background: #3e3e3e;
+    color: #ff0;
     display: flex;
     top:528px;
     left:22px;
-    height: 95px;
-    line-height: 85px;
+    height: 90px;
+    line-height: 80px;
     overflow:hidden;
     width: 948px;
     white-space:nowrap;
