@@ -1,7 +1,7 @@
 .daismartphone-myChangeImage2 img{
     position: absolute;
     top: 2085px;
-    left: 23.5px;
+    left: 21px;
     z-index:2;
     animation: ChangeImage 2s infinite;
     opacity: 0;
