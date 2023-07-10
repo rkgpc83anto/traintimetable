@@ -1,8 +1,8 @@
 .bbslast2{
     position: absolute;
     align-items: center;
-    background: #ff0;
-    color: #000;
+    background: #3e3e3e;
+    color: #ff0;
     display: flex;
     top:1546.5px;
     left:23px;
@@ -16,7 +16,7 @@
     z-index: 1;
     }
     .bbslast2 ul {
-    animation: flowing 30s linear infinite;
+    animation: flowing 60s linear infinite;
     font-size: 80px;
     transform:translateX(100%);
     margin: 0;
