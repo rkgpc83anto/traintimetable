@@ -1,6 +1,7 @@
 .buttondemo{
     position:absolute;
-    top:1.5%;
-    left:3%;
+    top:10px;
+    left:700px;
+    padding:2px
     border-color: #fff;
 }
