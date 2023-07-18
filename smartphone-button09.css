@@ -1,8 +1,10 @@
 .smartphone-button09{
     position:absolute;
-    top: 110px;
-    left:500px;
+    top: 130px;
+    left:550px;
     font-size:60px;
+    font-weight: bold;
+    font-family: sans-serif;
     border-color: #fff;
     padding:2px;
     z-index:1;
