@@ -1,0 +1,9 @@
+.smartphone-button08{
+    position:absolute;
+    top: 110px;
+    left:600px;
+    font-size:60px;
+    border-color: #fff;
+    padding:2px;
+    z-index:1;
+}
