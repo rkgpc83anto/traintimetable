@@ -16,7 +16,7 @@
     z-index: 1;
     }
     .bbs102 ul {
-    animation: flowing 40s linear infinite;
+    animation: flowing 30s linear infinite;
     font-size: 80px;
     transform:translateX(100%);
     margin: 0;
