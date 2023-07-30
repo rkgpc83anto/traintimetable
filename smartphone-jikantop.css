@@ -1,0 +1,10 @@
+.smartphone-jikantop{
+    position: absolute;
+    text-align: center;
+    top: 125px;
+    left: 740px;
+    z-index: 1;
+    font-size: 60px;
+    font-family:Arial;
+    color: #fff;
+      }
