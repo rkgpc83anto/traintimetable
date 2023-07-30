@@ -1,0 +1,8 @@
+.information{
+    position: absolute;
+    width:100px;
+    height:100px;
+    z-index:1;
+    left:880px;
+    top:15px;
+}
