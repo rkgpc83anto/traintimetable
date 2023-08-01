@@ -1,0 +1,11 @@
+#favoriteButton img {
+    width: 100px; /* 幅を指定 */
+    height: 100px; /* 高さを指定 */
+    vertical-align: middle; /* ボタン内での縦方向の位置を中央にするため */
+}
+
+.favorite{
+    position: absolute;
+    top: 110px;
+    left:570px;
+}
