@@ -27,7 +27,7 @@
       position: relative;
       padding: 2px;
       background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2028%2028%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2214%22%20cy%3D%2214%22%20r%3D%2214%22%20style%3D%22fill%3A%23451722%3B%22%2F%3E%0A%3C%2Fsvg%3E');
-      background-position: right calc(2em - 7px) center;
+      background-position: right calc(2em - 7px - 10px) center;
       background-size: 22px;
       background-repeat: no-repeat;
       color: #ded5c0;
@@ -41,10 +41,10 @@
   
   .accordion-002 summary::after {
       transform: translateY(-25%) rotate(45deg);
-      width: 5px;
-      height: 5px;
-      border-bottom: 3px solid #fff;
-      border-right: 3px solid #fff;
+      width: 50px;
+      height: 50px;
+      border-bottom: 10px solid #ded5c0;
+      border-right: 10px solid #ded5c0;
       content: '';
       transition: transform .3s;
   }
