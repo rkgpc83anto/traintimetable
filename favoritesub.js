@@ -30,14 +30,14 @@ function updateFavoriteButton() {
     const index = favorites.findIndex(item => item.url === pageUrl);
     if (index !== -1) {
       // お気に入り登録済みの場合はfavorite_on.pngを表示
-      button.innerHTML = '<img src="お気に入り登録済み.png">';
+      button.innerHTML = '<img src="お気に入り登録済み.jpg">';
     } else {
       // お気に入り未登録の場合はfavorite_off.pngを表示
-      button.innerHTML = '<img src="お気に入り登録.png">';
+      button.innerHTML = '<img src="お気に入り登録.jpg">';
     }
   } else {
     // ローカルストレージにお気に入り情報がない場合はfavorite_off.pngを表示
-    button.innerHTML = '<img src="お気に入り登録.png">';
+    button.innerHTML = '<img src="お気に入り登録.jpg">';
   }
 }
 updateFavoriteButton();
