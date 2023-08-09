@@ -5,21 +5,23 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 
-<title>今津線西宮北口平日発車案内</title>
+<title>阪神国道スマホ版</title>
 <div style="background-color:#0f5aa4; text-align: center;width: 980px;">
     <h1>
         <font color="white" face="sans-serif"><span style="font-size:80px;">西宮北口駅　平日発車案内</span><br><br><br><br></font>
     </h1>
 </div>
-<button style="background-color:#0f5aa4; color: #fff; font-family:sans-serif;" class="smartphone-button"><a href="トップページスマホ版.html" style="color:#fff;">駅を変更</a></button>
-<button style="background-color:#0f5aa4; color: #fff; font-family:sans-serif;" class="smartphone-button00"><a href="西宮北口.html" style="color:#fff;">神戸本線</a></button>
-<button style="background-color:#ff006a; color: #fff; font-family:sans-serif;" class="smartphone-button03"><a href="休今津線西宮北口.html" style="color:#fff;">休日</a></button>
-
-<span class="smartphone-jikan">
+<button style="background-color:#0f5aa4; color: #fff; font-family:sans-serif;" class="smartphone-button05"><a href="トップページスマホ版.html" style="color:#fff;">駅を変更</a></button>
+<button style="background-color:#0f5aa4; color: #fff; font-family:sans-serif;" class="smartphone-button06"><a href="西宮北口.html" style="color:#fff;">神戸本線</a></button>
+<button style="background-color:#ff006a; color: #fff; font-family:sans-serif;" class="smartphone-button08"><a href="休今津線西宮北口.html" style="color:#fff;">休</a></button>
+<button class="favorite" style="padding: 0%;border: 0cm;" id="favoriteButton" onclick="toggleFavorite()">
+    <!-- お気に入りボタンの画像を指定 -->
+    <img src="お気に入り登録.jpg" alt="お気に入り登録">
+  </button>
+<span class="smartphone-jikan01">
     <p id="Clock1" style="display: inline"></p>
     <script src="時間表示.js"></script>
 </span>
-
 
 <img class="smartphone-button11" src="普通通今津.jpg">
 <img class="smartphone-button12" src="普通通今津.jpg">
@@ -39,17 +41,21 @@
     <link rel="stylesheet" type="text/css" href="smartphone-font9.css">
     <link rel="stylesheet" type="text/css" href="smartphone-button.css">
     <link rel="stylesheet" type="text/css" href="smartphone-button00.css">
-    <link rel="stylesheet" type="text/css" href="smartphone-button02.css">
-    <link rel="stylesheet" type="text/css" href="smartphone-button03.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button05.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button06.css">
     <link rel="stylesheet" type="text/css" href="daismartphone-kakoi.css">
     <link rel="stylesheet" type="text/css" href="smartphone-buttonsize1.css">
     <link rel="stylesheet" type="text/css" href="smartphone-densya.css">
     <link rel="stylesheet" type="text/css" href="smartphone-densya1.css">
-    <link rel="stylesheet" type="text/css" href="smartphone-jikan.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-jikan01.css">
 
     <link rel="stylesheet" type="text/css" href="smartphone-gousen1.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-gousen2.css">
     <link rel="stylesheet" type="text/css" href="daismartphone-gousen3.css">
     <link rel="stylesheet" type="text/css" href="daismartphone-gousen4.css">
+
+    <link rel="stylesheet" type="text/css" href="threesmartphone-gousen2.css">
+    <link rel="stylesheet" type="text/css" href="threesmartphone-gousen3.css">
 
     <link rel="stylesheet" type="text/css" href="smartphone-hyou1.css">
     <link rel="stylesheet" type="text/css" href="daismartphone-hyou2.css">
@@ -86,15 +92,21 @@
     <link rel="stylesheet" type="text/css" href="daismartphone-電車が発車します1.css">
     <link rel="stylesheet" type="text/css" href="daismartphone-電車が発車します2.css">
 
+    <link rel="stylesheet" type="text/css" href="bbs101.css">
+    <link rel="stylesheet" type="text/css" href="bbs102.css">
     <link rel="stylesheet" type="text/css" href="bbs110.css">
     <link rel="stylesheet" type="text/css" href="bbs111.css">
+
     <link rel="stylesheet" type="text/css" href="bbslast1.css">
     <link rel="stylesheet" type="text/css" href="bbslast2.css">
-    <link rel="stylesheet" type="text/css" href="bbs32.css">
 
+    <link rel="stylesheet" type="text/css" href="gradient.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button08.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button09.css">
 
+    <link rel="stylesheet" type="text/css" href="nissei.css">
 
-
+    <link rel="stylesheet" type="text/css" href="favorite.css">
 
 
 </head>
@@ -132,93 +144,72 @@
       </ul>
 </div>
 
-
-
 <body bgcolor="#451722" style="font-family:sans-serif;">
 
     <img src="5号線.jpg" class="smartphone-gousen1">
-    <img src="6号線.jpg" class="daismartphone-gousen3">
-    <img src="7号線.jpg" class="smartphone-gousen4">
-
+    <!--<img src="6号線.jpg" class="daismartphone-gousen4">
+    <img src="7号線.jpg" class="daismartphone-gousen4">-->
 
 
     <div class="daismartphone-kakoi" style="text-align: center;">
-        <font  face="sans-serif"><span style="font-size: 60px;">今津　</span></font><font  face="sans-serif"><span style="font-size: 40px;">for Imazu</span><br>
-        <font  face="sans-serif"><span style="font-size: 50px;">阪神国道・阪神本線方面</span></font>
+        <font  face="sans-serif"><span style="font-size: 60px;">今津　</span></font><font  face="sans-serif"><span style="font-size: 40px;">for Imazu</span><br><br>
+        <font  face="sans-serif"><span style="font-size: 50px;">阪神国道・阪神電鉄線方面</span></font>
         <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="smartphone-hyou1">
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
             <tr height="100px">
                 <td width="943px" colspan="2"></td>
             </tr>
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
         </table>
     </div>
 </body>
 
 </html>
-<br>
 <body bgcolor="#451722" style="font-family:sans-serif;">
 
 
     <div class="daismartphone-kakoi" style="text-align: center;">
-        <font  face="sans-serif"><span style="font-size: 60px;">宝塚　</span></font><font  face="sans-serif"><span style="font-size: 40px;">for Takarazuka</span><br>
+        <font  face="sans-serif"><span style="font-size: 60px;">宝塚　</span></font><font  face="sans-serif"><span style="font-size: 40px;">for Takarazuka</span><br><br>
         <font  face="sans-serif"><span style="font-size: 50px;">甲東園・仁川・逆瀬川方面</span></font>
         <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="daismartphone-hyou2">
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
             <tr height="100px">
                 <td width="943px" colspan="2"></td>
             </tr>
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
             <tr height="170px">
-                <td width="284px"></td>
-                <td width="659px"></td>
+                <td width="288px"></td>
+                <td width="655px"></td>
             </tr>
         </table>
     </div>
 </body>
 
 </html>
-
-<div class="timerHidden" data-appear_time="23:05:00" data-disappear_time="24:00:00"><img class="smartphone-button14" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="4:55:00"><img class="smartphone-button14" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="23:20:00" data-disappear_time="24:00:00"><img class="smartphone-button13" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="4:55:00"><img class="smartphone-button13" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="23:34:00" data-disappear_time="24:00:00"><img class="smartphone-button12" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="4:55:00"><img class="smartphone-button12" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="23:49:00" data-disappear_time="24:00:00"><div class="bbslast1"><ul><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li></ul></div><img class="smartphone-button11" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="2:00:00"><div class="bbslast1"><ul><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li></ul></div><img class="smartphone-button11" src="無.jpg"></div>                
-
-<div class="timerHidden" data-appear_time="23:21:00" data-disappear_time="24:00:00"><img class="smartphone-button27" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="4:55:00"><img class="smartphone-button27" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="23:36:00" data-disappear_time="24:00:00"><img class="smartphone-button26" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="4:55:00"><img class="smartphone-button26" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="23:51:00" data-disappear_time="24:00:00"><img class="smartphone-button25" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="4:55:00"><img class="smartphone-button25" src="無.jpg"></div>
-<div class="timerHidden" data-appear_time="0:10:00" data-disappear_time="2:00:00"><div class="bbslast2"><ul><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li></ul></div><img class="smartphone-button24" src="無.jpg"></div>
 
     <div class="timerHidden" data-appear_time="4:55:00" data-disappear_time="5:05:00"><span class="daismartphone-senpatsu1" style="color: #fff">&nbsp;5:05</span><span class="daismartphone-jihatsu1" style="color: #fff">&nbsp;5:25</span><span class="daismartphone-jijihatsu1" style="color: #fff">&nbsp;5:50</span><span class="daismartphone-jijijihatsu1" style="color: #fff">&nbsp;6:12</span></div>
     <div class="timerHidden" data-appear_time="5:05:00" data-disappear_time="5:25:00"><span class="daismartphone-senpatsu1" style="color: #fff">&nbsp;5:25</span><span class="daismartphone-jihatsu1" style="color: #fff">&nbsp;5:50</span><span class="daismartphone-jijihatsu1" style="color: #fff">&nbsp;6:12</span><span class="daismartphone-jijijihatsu1" style="color: #fff">&nbsp;6:29</span></div>
@@ -339,6 +330,12 @@
     <div class="timerHidden" data-appear_time="23:05:00" data-disappear_time="23:20:00"><span class="daismartphone-senpatsu1" style="color: #fff">23:20</span><span class="daismartphone-jihatsu1" style="color: #fff">23:34</span><span class="daismartphone-jijihatsu1" style="color: #fff">23:49</span></div>
     <div class="timerHidden" data-appear_time="23:20:00" data-disappear_time="23:34:00"><span class="daismartphone-senpatsu1" style="color: #fff">23:34</span><span class="daismartphone-jihatsu1" style="color: #fff">23:49</span></div>
     <div class="timerHidden" data-appear_time="23:34:00" data-disappear_time="23:49:00"><span class="daismartphone-senpatsu1" style="color: #fff">23:49</span></div>
+    
+
+    <div class="timerHidden" data-appear_time="23:05:00" data-disappear_time="4:55:00"><img class="smartphone-button14" src="無.jpg"></div>
+    <div class="timerHidden" data-appear_time="23:20:00" data-disappear_time="4:55:00"><img class="smartphone-button13" src="無.jpg"></div>
+    <div class="timerHidden" data-appear_time="23:34:00" data-disappear_time="4:55:00"><img class="smartphone-button12" src="無.jpg"></div>
+    <div class="timerHidden" data-appear_time="23:49:00" data-disappear_time="4:55:00"><img class="smartphone-button11" src="無.jpg"></div>
 
 
     <div class="timerHidden" data-appear_time="5:04:00" data-disappear_time="5:05:00"><div class="daismartphone-myChangeImage1"><img src="スマホ版電車が発車します黄.jpg" width="950px" height="165px"><img src="スマホ版電車が発車します黒.jpg" width="950px" height="165px"></div></div>
@@ -596,8 +593,8 @@
 <div class="timerHidden" data-appear_time="23:06:00" data-disappear_time="23:21:00"><span class="daismartphone-senpatsu2" style="color:#fff">23:21</span><span class="daismartphone-jihatsu2" style="color:#fff">23:36</span><span class="daismartphone-jijihatsu2" style="color:#fff">23:51</span><span class="daismartphone-jijijihatsu2" style="color:#fff">24:10</span></div>
 <div class="timerHidden" data-appear_time="23:21:00" data-disappear_time="23:36:00"><span class="daismartphone-senpatsu2" style="color:#fff">23:36</span><span class="daismartphone-jihatsu2" style="color:#fff">23:51</span><span class="daismartphone-jijihatsu2" style="color:#fff">24:10</span></div>
 <div class="timerHidden" data-appear_time="23:36:00" data-disappear_time="23:51:00"><span class="daismartphone-senpatsu2" style="color:#fff">23:51</span><span class="daismartphone-jihatsu2" style="color:#fff">24:10</span></div>
-<div class="timerHidden" data-appear_time="23:51:00" data-disappear_time="24:00:00"><span class="daismartphone-senpatsu2" style="color:#fff">24:10</span></div>
-<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="0:10:00"><span class="daismartphone-senpatsu2" style="color:#fff">24:10</span></div>
+<div class="timerHidden" data-appear_time="23:51:00" data-disappear_time="24:10:00"><span class="daismartphone-senpatsu2" style="color:#fff">24:10</span></div>
+
 
 <div class="timerHidden" data-appear_time="23:21:00" data-disappear_time="4:34:00"><img class="smartphone-button27" src="無.jpg"></div>
 <div class="timerHidden" data-appear_time="23:36:00" data-disappear_time="4:34:00"><img class="smartphone-button26" src="無.jpg"></div>
@@ -740,7 +737,7 @@
 <div class="timerHidden" data-appear_time="23:20:00" data-disappear_time="23:21:00"><div class="daismartphone-myChangeImage2"><img src="スマホ版電車が発車します黄.jpg" width="950px" height="165px"><img src="スマホ版電車が発車します黒.jpg" width="950px" height="165px"></div></div>
 <div class="timerHidden" data-appear_time="23:35:00" data-disappear_time="23:36:00"><div class="daismartphone-myChangeImage2"><img src="スマホ版電車が発車します黄.jpg" width="950px" height="165px"><img src="スマホ版電車が発車します黒.jpg" width="950px" height="165px"></div></div>
 <div class="timerHidden" data-appear_time="23:50:00" data-disappear_time="23:51:00"><div class="daismartphone-myChangeImage2"><img src="スマホ版電車が発車します黄.jpg" width="950px" height="165px"><img src="スマホ版電車が発車します黒.jpg" width="950px" height="165px"></div></div>
-<div class="timerHidden" data-appear_time="0:09:00" data-disappear_time="0:10:00"><div class="daismartphone-myChangeImage2"><img src="スマホ版電車が発車します黄.jpg" width="950px" height="165px"><img src="スマホ版電車が発車します黒.jpg" width="950px" height="165px"></div></div>
+<div class="timerHidden" data-appear_time="24:09:00" data-disappear_time="24:10:00"><div class="daismartphone-myChangeImage2"><img src="スマホ版電車が発車します黄.jpg" width="950px" height="165px"><img src="スマホ版電車が発車します黒.jpg" width="950px" height="165px"></div></div>
 
 
-<script src="system1000.js"></script>
+<script src="system10081.js"></script>
