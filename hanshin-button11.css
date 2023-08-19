@@ -89,7 +89,50 @@
 }
 
 
+.hanshin-button51{
+    position:absolute;
+    top: 1525.6px;
+    left: 491px;
+    width: 480px;
+    height: 120px;
+    z-index:1;
+}
 
+.hanshin-button52{
+    position:absolute;
+    top: 1754.2px;
+    left: 491px;
+    width: 480px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button53{
+    position:absolute;
+    top: 1881.2px;
+    left: 491px;
+    width: 480px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button54{
+    position:absolute;
+    top: 2008.5px;
+    left: 491px;
+    width: 480px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button55{
+    position:absolute;
+    top: 2135.5px;
+    left: 491px;
+    width: 480px;
+    height: 120px;
+    z-index:1;
+}
 
 
 
@@ -180,6 +223,52 @@
 }
 
 .hanshin-button48{
+    position:absolute;
+    top: 2135.5px;
+    left: 251px;
+    width: 240px;
+    height: 120px;
+    z-index:1;
+}
+
+
+.hanshin-button64{
+    position:absolute;
+    top: 1525.6px;
+    left: 251px;
+    width: 240px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button65{
+    position:absolute;
+    top: 1754.2px;
+    left: 251px;
+    width: 240px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button66{
+    position:absolute;
+    top: 1881.2px;
+    left: 251px;
+    width: 240px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button67{
+    position:absolute;
+    top: 2008.5px;
+    left: 251px;
+    width: 240px;
+    height: 120px;
+    z-index:1;
+}
+
+.hanshin-button68{
     position:absolute;
     top: 2135.5px;
     left: 251px;
