@@ -92,3 +92,48 @@
 }
 
 
+.hanshin-senpatsu3{
+    position:absolute;
+    top: 2535px;
+    left: 30px;
+    font-size :80px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.hanshin-jihatsu3{
+    position:absolute;
+    top: 2765px;
+    left: 30px;
+    font-size :80px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.hanshin-jijihatsu3{
+    position:absolute;
+    top: 2890px;
+    left: 30px;
+    font-size :80px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.hanshin-jijijihatsu3{
+    position:absolute;
+    top: 3020px;
+    left: 30px;
+    font-size :80px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.hanshin-jijijijihatsu3{
+    position:absolute;
+    top: 3147px;
+    left: 30px;
+    font-size :80px;
+    font-family:Arial;
+    z-index:1;
+}
+
