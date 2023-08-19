@@ -48,7 +48,7 @@
 
 .hanshin-senpatsu2{
     position:absolute;
-    top: 225px;
+    top: 1400px;
     left: 30px;
     font-size :80px;
     font-family:Arial;
@@ -57,7 +57,7 @@
 
 .hanshin-jihatsu2{
     position:absolute;
-    top: 225px;
+    top: 1625px;
     left: 30px;
     font-size :80px;
     font-family:Arial;
@@ -66,7 +66,7 @@
 
 .hanshin-jijihatsu2{
     position:absolute;
-    top: 225px;
+    top: 1750px;
     left: 30px;
     font-size :80px;
     font-family:Arial;
@@ -75,7 +75,7 @@
 
 .hanshin-jijijihatsu2{
     position:absolute;
-    top: 225px;
+    top: 1875px;
     left: 30px;
     font-size :80px;
     font-family:Arial;
@@ -84,7 +84,7 @@
 
 .hanshin-jijijijihatsu2{
     position:absolute;
-    top: 225px;
+    top: 2000px;
     left: 30px;
     font-size :80px;
     font-family:Arial;
