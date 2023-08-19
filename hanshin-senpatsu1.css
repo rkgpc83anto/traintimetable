@@ -1,7 +1,7 @@
 .hanshin-senpatsu1{
     position:absolute;
     top: 520px;
-    left: 30px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -10,7 +10,7 @@
 .hanshin-jihatsu1{
     position:absolute;
     top: 710px;
-    left: 38px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -19,7 +19,7 @@
 .hanshin-jijihatsu1{
     position:absolute;
     top: 850px;
-    left: 38px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -28,7 +28,7 @@
 .hanshin-jijijihatsu1{
     position:absolute;
     top: 990px;
-    left: 38px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -37,7 +37,7 @@
 .hanshin-jijijijihatsu1{
     position:absolute;
     top: 1130px;
-    left: 38px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -48,8 +48,8 @@
 
 .hanshin-senpatsu2{
     position:absolute;
-    top: 385px;
-    left: 38px;
+    top: 225px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -57,8 +57,8 @@
 
 .hanshin-jihatsu2{
     position:absolute;
-    top: 385px;
-    left: 38px;
+    top: 225px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -66,8 +66,8 @@
 
 .hanshin-jijihatsu2{
     position:absolute;
-    top: 385px;
-    left: 38px;
+    top: 225px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -75,8 +75,8 @@
 
 .hanshin-jijijihatsu2{
     position:absolute;
-    top: 385px;
-    left: 38px;
+    top: 225px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -84,8 +84,8 @@
 
 .hanshin-jijijijihatsu2{
     position:absolute;
-    top: 385px;
-    left: 38px;
+    top: 225px;
+    left: 22px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
