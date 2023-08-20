@@ -1,7 +1,7 @@
 .hanshin-myChangeImage1 img{
     position: absolute;
     top: 1071px;
-    left: 21px;
+    left: 21.5px;
     z-index:10;
     animation: ChangeImage 2s infinite;
     opacity: 0;
@@ -49,7 +49,7 @@
 .hanshin-myChangeImage2 img{
     position: absolute;
     top: 2132.5px;
-    left: 21px;
+    left: 21.5px;
     z-index: 10;
     animation: ChangeImage 2s infinite;
     opacity: 0;
@@ -97,7 +97,7 @@
 .hanshin-myChangeImage3 img{
     position: absolute;
     top: 3153px;
-    left: 21px;
+    left: 21.5px;
     z-index:10;
     animation: ChangeImage 2s infinite;
     opacity: 0;
