@@ -1,8 +1,8 @@
 .hanshin-myChangeImage1 img{
     position: absolute;
-    top: 971px;
-    left: 23px;
-    z-index:1;
+    top: 1071px;
+    left: 21px;
+    z-index:10;
     animation: ChangeImage 2s infinite;
     opacity: 0;
 }
@@ -48,12 +48,12 @@
 
 .hanshin-myChangeImage2 img{
     position: absolute;
-    top: 971px;
-    left: 23px;
-    z-index:1;
+    top: 2132.5px;
+    left: 21px;
+    z-index: 10;
     animation: ChangeImage 2s infinite;
     opacity: 0;
-    z-index:1;
+
 }
 
 @keyframes ChangeImage{
@@ -96,9 +96,9 @@
 
 .hanshin-myChangeImage3 img{
     position: absolute;
-    top: 2134px;
-    left: 23px;
-    z-index:1;
+    top: 3153px;
+    left: 21px;
+    z-index:10;
     animation: ChangeImage 2s infinite;
     opacity: 0;
 }
