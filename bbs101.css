@@ -4,12 +4,12 @@
     background: #3e3e3e;
     color: #fff;
     display: flex;
-    top:1543.5px;
-    left:22px;
+    top:1380px;
+    left:25px;
     height: 90px;
     line-height: 80px;
     overflow:hidden;
-    width: 950px;
+    width: 948px;
     white-space:nowrap;
     margin-top: 100px;
     font-family: sans-serif;
@@ -24,7 +24,7 @@
     }
     .bbs101 ul li{
     display: inline-block;
-    padding-right: 950px;
+    padding-right: 948px;
     }
     @keyframes flowing {
     0% { transform:translateX(20%); }

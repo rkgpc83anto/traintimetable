@@ -24,7 +24,7 @@
     }
     .bbs1003 ul li{
     display: inline-block;
-    padding-right: 950px;
+    padding-right: 948px;
     }
     @keyframes flowing {
     0% { transform:translateX(20%); }

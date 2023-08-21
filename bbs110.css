@@ -4,8 +4,8 @@
     background: #3e3e3e;
     color: #fff;
     display: flex;
-    top:528px;
-    left:23px;
+    top:428px;
+    left:25px;
     height: 90px;
     line-height: 80px;
     overflow:hidden;
@@ -24,7 +24,7 @@
     }
     .bbs110 ul li{
     display: inline-block;
-    padding-right: 950px;
+    padding-right: 948px;
     }
     @keyframes flowing {
     0% { transform:translateX(20%); }

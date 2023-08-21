@@ -4,7 +4,7 @@
     background: #3e3e3e;
     color: #fff;
     display: flex;
-    top:1550px;
+    top:1552px;
     left:25px;
     height: 90px;
     line-height: 80px;
@@ -24,7 +24,7 @@
     }
     .bbs1002 ul li{
     display: inline-block;
-    padding-right: 950px;
+    padding-right: 948px;
     }
     @keyframes flowing {
     0% { transform:translateX(20%); }
