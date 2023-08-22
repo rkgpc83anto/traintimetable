@@ -1,0 +1,230 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<title>新開地駅平日発車案内</title>
+<div style="background-color:#00b3ff; text-align: center;width: 980px;">
+    <h1>
+        <font color="white" face="sans-serif"><span style="font-size:80px;">新開地駅　平日発車案内</span><br><br><br><br></font>
+    </h1>
+</div>
+<button style="background-color:#00b3ff; color: #fff; font-family:sans-serif;" class="smartphone-button05"><a href="トップページスマホ版.html" style="color:#fff;">駅を検索</a></button>
+<button style="background-color:#ff006a; color: #fff; font-family:sans-serif;" class="smartphone-button06"><a href="休新開地.html" style="color:#fff;">休</a></button>
+<button style="background-color:#e4040c; color: #fff; font-family:sans-serif;" class="smartphone-button08"><a href="神鉄新開地.html" style="color:#fff;">神鉄</a></button>
+
+
+<button class="favorite" style="padding: 0%;border: 0cm;" id="favoriteButton" onclick="toggleFavorite()">
+    <!-- お気に入りボタンの画像を指定 -->
+    <img src="阪神お気に入り登録.jpg" alt="お気に入り登録">
+  </button>
+  <span class="smartphone-jikan01">
+    <p id="Clock1" style="display: inline"></p>
+    <script src="時間表示.js"></script>
+</span>
+
+<img class="hanshin-button11" src="行先無.jpg">
+<img class="hanshin-button12" src="行先無.jpg">
+<img class="hanshin-button13" src="行先無.jpg">
+<img class="hanshin-button14" src="行先無.jpg">
+<img class="hanshin-button15" src="行先無.jpg">
+
+<img class="hanshin-button31" src="行先無.jpg">
+<img class="hanshin-button32" src="行先無.jpg">
+<img class="hanshin-button33" src="行先無.jpg">
+<img class="hanshin-button34" src="行先無.jpg">
+<img class="hanshin-button35" src="行先無.jpg">
+
+<img class="hanshin-button24" src="種別無.jpg">
+<img class="hanshin-button25" src="種別無.jpg">
+<img class="hanshin-button26" src="種別無.jpg">
+<img class="hanshin-button27" src="種別無.jpg">
+<img class="hanshin-button28" src="種別無.jpg">
+
+<img class="hanshin-button44" src="種別無.jpg">
+<img class="hanshin-button45" src="種別無.jpg">
+<img class="hanshin-button46" src="種別無.jpg">
+<img class="hanshin-button47" src="種別無.jpg">
+<img class="hanshin-button48" src="種別無.jpg">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="smartphone-a.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-blinking.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-size5.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-time.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-font8.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-font9.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button00.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button05.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button06.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-kakoi.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-buttonsize1.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-densya.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-densya1.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-jikan01.css">
+
+    <link rel="stylesheet" type="text/css" href="smartphone-gousen1.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-gousen2.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-gousen3.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-gousen4.css">
+
+    <link rel="stylesheet" type="text/css" href="threesmartphone-gousen2.css">
+    <link rel="stylesheet" type="text/css" href="threesmartphone-gousen3.css">
+
+    <link rel="stylesheet" type="text/css" href="smartphone-hyou1.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-hyou2.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-annai0.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-teisya1.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-teisya2.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-annai1.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-annai2.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-font150.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-font200.css">
+
+    <link rel="stylesheet" type="text/css" href="hanshin-button11.css">
+    <link rel="stylesheet" type="text/css" href="hanshin-senpatsu1.css">
+
+    <link rel="stylesheet" type="text/css" href="daismartphone-電車が発車します1.css">
+    <link rel="stylesheet" type="text/css" href="daismartphone-電車が発車します2.css">
+
+    <link rel="stylesheet" type="text/css" href="bbs101.css">
+    <link rel="stylesheet" type="text/css" href="bbs102.css">
+
+    <link rel="stylesheet" type="text/css" href="bbs110.css">
+    <link rel="stylesheet" type="text/css" href="bbs111.css">
+
+    <link rel="stylesheet" type="text/css" href="bbslast1.css">
+    <link rel="stylesheet" type="text/css" href="bbslast2.css">
+
+    <link rel="stylesheet" type="text/css" href="gradient.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button08.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button09.css">
+
+    <link rel="stylesheet" type="text/css" href="nissei.css">
+
+    <link rel="stylesheet" type="text/css" href="favorite.css">
+
+
+    <link rel="stylesheet" type="text/css" href="bbs1001.css">
+    <link rel="stylesheet" type="text/css" href="bbs1002.css">
+
+    <link rel="stylesheet" type="text/css" href="hanshin-hyou1.css">
+    <link rel="stylesheet" type="text/css" href="hanshin-hyou2.css">
+
+
+</head>
+
+<style>
+    .timerHidden {
+        display: none;
+    }
+    
+    .timerVisible {
+        display: block;
+    }
+</style>
+
+<html>
+
+<style>
+    .ji{
+        font-family: sans-serif;
+    }
+</style>
+
+<div class="bbs1001">
+    <ul>
+        <li>皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。</li>
+      </ul>
+</div>
+<div class="bbs1002">
+    <ul>
+        <li>皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。</li>
+      </ul>
+</div>
+
+
+
+<body bgcolor="#451722" style="font-family:sans-serif;">
+    <img src="1号線.jpg" class="smartphone-gousen1">
+    <img src="2号線.jpg" class="daismartphone-gousen2">
+    <img src="3号線.jpg" class="daismartphone-gousen3">
+    <img src="4号線.jpg" class="smartphone-gousen4">
+
+    <div class="daismartphone-kakoi" style="text-align: center;">
+        <span style="font-size: 60px;font-family:sans-serif;">大阪梅田　</span><font  face="sans-serif"><span style="font-size: 50px;">for Osaka-umeda</span><br>
+            <font  face="sans-serif"><span style="font-size: 40px;">阪神神戸三宮・尼崎／阪急神戸三宮・西宮北口方面</span>
+        <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hanshin-hyou1">
+            <tr height="125px">
+                <td width="222px"></td>
+                <td width="721px"></td>
+            </tr>
+            <tr height="100px">
+                <td width="943px" colspan="2"></td>
+            </tr>
+            <tr height="125px">
+                <td width="222px"></td>
+                <td width="721px"></td>
+            </tr>
+            <tr height="125px">
+                <td width="222px"></td>
+                <td width="721px"></td>
+            </tr>
+            <tr height="125px">
+                <td width="222px"></td>
+                <td width="721px"></td>
+            </tr>
+            <tr height="125px">
+                <td width="222px"></td>
+                <td width="721px"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+<br>
+<html>
+<body>
+
+    <div class="daismartphone-kakoi" style="text-align: center;">
+        <font  face="sans-serif"><span style="font-size: 60px;">姫路　</span></font><font  face="sans-serif"><span style="font-size: 50px;">for Shinkaichi</span><br><br>
+            <font  face="sans-serif"><span style="font-size: 45px;">板宿・山陽明石・山陽網干方面</span></font>
+                <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hanshin-hyou2">
+                    <tr height="125px">
+                        <td width="222px"></td>
+                        <td width="721px"></td>
+                    </tr>
+                    <tr height="100px">
+                        <td width="943px" colspan="2"></td>
+                    </tr>
+                    <tr height="125px">
+                        <td width="222px"></td>
+                        <td width="721px"></td>
+                    </tr>
+                    <tr height="125px">
+                        <td width="222px"></td>
+                        <td width="721px"></td>
+                    </tr>
+                    <tr height="125px">
+                        <td width="222px"></td>
+                        <td width="721px"></td>
+                    </tr>
+                    <tr height="125px">
+                        <td width="222px"></td>
+                        <td width="721px"></td>
+                    </tr>
+                </table>
+    </div>
+</body>
+</html>
+
+<script src="system1000.js"></script>
+<script src="阪神favoritesub.js"></script>
+
+<div class="timerHidden" data-appear_time="23:48:00" data-disappear_time="24:00:00"><div class="bbslast1"><ul><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li></ul></div><img class="smartphone-button11" src="無.jpg"></div>                
+<div class="timerHidden" data-appear_time="0:00:00" data-disappear_time="2:00:00"><div class="bbslast1"><ul><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li></ul></div><img class="smartphone-button11" src="無.jpg"></div>                
+<div class="timerHidden" data-appear_time="0:06:00" data-disappear_time="2:00:00"><div class="bbslast2"><ul><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li><li>本日の運行は終了しました</li><li>Today's service has finished</li></ul></div><img class="smartphone-button24" src="無.jpg"></div>                
