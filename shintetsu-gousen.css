@@ -1,0 +1,35 @@
+.shintetsu-gousen4{
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width:60px;
+    height:60px;
+
+}
+
+.shintetsu-gousen3{
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    width:60px;
+    height:60px;
+
+}
+
+.shintetsu-gousen2{
+    position: absolute;
+    top: 220px;
+    left: 720px;
+    width:60px;
+    height:60px;
+
+}
+
+.shintetsu-gousen1{
+    position: absolute;
+    top: 220px;
+    left: 800px;
+    width:60px;
+    height:60px;
+
+}
