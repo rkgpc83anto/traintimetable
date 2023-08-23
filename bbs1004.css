@@ -17,7 +17,7 @@
     }
     .bbs1004 ul {
     animation: flowing 30s linear infinite;
-    font-size: 80px;
+    font-size: 70px;
     transform:translateX(100%);
     margin: 0;
     padding: 0;
