@@ -1,6 +1,6 @@
 .shintetsu-button11{
     position:absolute;
-    top: 490.1px;
+    top: 475.1px;
     left: 266.5px;
     width: 704px;
     height: 110px;
@@ -9,7 +9,7 @@
 
 .shintetsu-button12{
     position:absolute;
-    top: 764.3px;
+    top: 650px;
     left: 266.5px;
     width: 704px;
     height: 110px;
@@ -18,7 +18,7 @@
 
 .shintetsu-button13{
     position:absolute;
-    top: 910.3px;
+    top: 764.3px;
     left: 266.5px;
     width: 704px;
     height: 110px;
@@ -27,7 +27,7 @@
 
 .shintetsu-button14{
     position:absolute;
-    top: 1022.8px;
+    top: 907.3px;
     left: 266.5px;
     width: 704px;
     height: 110px;
@@ -36,7 +36,16 @@
 
 .shintetsu-button15{
     position:absolute;
-    top: 1135.9px;
+    top: 1019.8.9px;
+    left: 266.5px;
+    width: 704px;
+    height: 110px;
+    z-index:1;
+}
+
+.shintetsu-button16{
+    position:absolute;
+    top: 1133.9px;
     left: 266.5px;
     width: 704px;
     height: 110px;
