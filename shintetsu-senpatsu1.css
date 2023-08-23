@@ -1,7 +1,7 @@
 .shintetsu-senpatsu1{
     position:absolute;
-    top: 200px;
-    left: 32px;
+    top: 240px;
+    left: 25px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -9,8 +9,8 @@
 
 .shintetsu-jihatsu1{
     position:absolute;
-    top: 350px;
-    left: 32px;
+    top: 450px;
+    left: 25px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -18,8 +18,8 @@
 
 .shintetsu-jijihatsu1{
     position:absolute;
-    top: 500px;
-    left: 32px;
+    top: 620px;
+    left: 25px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -27,8 +27,8 @@
 
 .shintetsu-jijijihatsu1{
     position:absolute;
-    top: 600px;
-    left: 32px;
+    top: 730px;
+    left: 25px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -36,8 +36,8 @@
 
 .shintetsu-jijijijihatsu1{
     position:absolute;
-    top: 700px;
-    left: 32px;
+    top: 840px;
+    left: 25px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
@@ -45,8 +45,8 @@
 
 .shintetsu-jijijijijihatsu1{
     position:absolute;
-    top: 800px;
-    left: 32px;
+    top: 950px;
+    left: 25px;
     font-size :80px;
     font-family:Arial;
     z-index:1;
