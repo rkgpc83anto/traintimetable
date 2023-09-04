@@ -30,14 +30,14 @@ function toggleFavorite() {
       const index = favorites.findIndex(item => item.url === pageUrl);
       if (index !== -1) {
         // お気に入り登録済みの場合はfavorite_on.pngを表示
-        button.innerHTML = '<img src="ポートお気に入り登録済み.jpg">';
+        button.innerHTML = '<img src="ポートお気に入り登録済み.JPG">';
       } else {
         // お気に入り未登録の場合はfavorite_off.pngを表示
-        button.innerHTML = '<img src="ポートお気に入り登録.jpg">';
+        button.innerHTML = '<img src="ポートお気に入り登録.JPG">';
       }
     } else {
       // ローカルストレージにお気に入り情報がない場合はfavorite_off.pngを表示
-      button.innerHTML = '<img src="ポートお気に入り登録.jpg">';
+      button.innerHTML = '<img src="ポートお気に入り登録.JPG">';
     }
   }
   updateFavoriteButton();
