@@ -1,0 +1,30 @@
+body {
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .slider-container {
+    position: relative;
+    margin: 50px auto;
+    max-width: 600px;
+    font-size: 60px;
+  }
+  
+  #sliderImage {
+    max-width: 100%;
+    height: auto;
+    font-size: 60px;
+  }
+  
+  button {
+    font-size: 60px;
+    font-family:sans-serif;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
