@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="color: #ded5c0;">
+<head>
+  <title>LEDシュミレーター</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="background-color:#451722;" >阪急
+  <select id="imageSelector" style="font-size: 60px;">
+    <optgroup label="阪急神戸線">
+    <option value="特急大阪梅.jpg" style="font-size: 40px;" selected>特急　大阪梅田</option>
+    <option value="特急急塚口.jpg" style="font-size: 40px;"disabled>特急　塚口</option>
+    <option value="特急西宮北.jpg" style="font-size: 40px;"disabled>特急　西宮北口</option>
+    <option value="特急急夙川.jpg" style="font-size: 40px;"disabled>特急　夙川</option>
+    <option value="特急神戸三.jpg" style="font-size: 40px;"disabled>特急　神戸三宮</option>
+    <option value="特急高速神.jpg" style="font-size: 40px;">特急　高速神戸</option>
+    <option value="特急新開地.jpg" style="font-size: 40px;">特急　新開地</option>
+    <option value="通特大阪梅.jpg" style="font-size: 40px;">通特　大阪梅田</option>
+    <option value="通特特塚口.jpg" style="font-size: 40px;"disabled>通特　塚口</option>
+    <option value="通特西宮北.jpg" style="font-size: 40px;">通特　西宮北口</option>
+    <option value="通特特夙川.jpg" style="font-size: 40px;"disabled>通特　夙川</option>
+    <option value="通特神戸三.jpg" style="font-size: 40px;">通特　神戸三宮</option>
+    <option value="通特高速神.jpg" style="font-size: 40px;">通特　高速神戸</option>
+    <option value="通特新開地.jpg" style="font-size: 40px;">通特　新開地</option>
+    <option value="準特大阪梅.jpg" style="font-size: 40px;">準特　大阪梅田</option>
+    <option value="準特特塚口.jpg" style="font-size: 40px;"disabled>準特　塚口</option>
+    <option value="準特西宮北.jpg" style="font-size: 40px;"disabled>準特　西宮北口</option>
+    <option value="準特特夙川.jpg" style="font-size: 40px;"disabled>準特　夙川</option>
+    <option value="準特神戸三.jpg" style="font-size: 40px;"disabled>準特　神戸三宮</option>
+    <option value="準特高速神.jpg" style="font-size: 40px;">準特　高速神戸</option>
+    <option value="準特新開地.jpg" style="font-size: 40px;">準特　新開地</option>
+    <option value="急行大阪梅.jpg" style="font-size: 40px;">急行　大阪梅田</option>
+    <option value="急行行塚口.jpg" style="font-size: 40px;"disabled>急行　塚口</option>
+    <option value="急行西宮北.jpg" style="font-size: 40px;"disabled>急行　西宮北口</option>
+    <option value="急行行夙川.jpg" style="font-size: 40px;"disabled>急行　夙川</option>
+    <option value="急行神戸三.jpg" style="font-size: 40px;">急行　神戸三宮</option>
+    <option value="急行高速神.jpg" style="font-size: 40px;"disabled>急行　高速神戸</option>
+    <option value="急行新開地.jpg" style="font-size: 40px;">急行　新開地</option>
+    <option value="通急大阪梅.jpg" style="font-size: 40px;">通急　大阪梅田</option>
+    <option value="通急急塚口.jpg" style="font-size: 40px;"disabled>通急　塚口</option>
+    <option value="通急西宮北.jpg" style="font-size: 40px;"disabled>通急　西宮北口</option>
+    <option value="通急急夙川.jpg" style="font-size: 40px;"disabled>通急　夙川</option>
+    <option value="通急神戸三.jpg" style="font-size: 40px;">通急　神戸三宮</option>
+    <option value="通急高速神.jpg" style="font-size: 40px;"disabled>通急　高速神戸</option>
+    <option value="通急新開地.jpg" style="font-size: 40px;"disabled>通急　新開地</option>
+    <option value="普通大阪梅.jpg" style="font-size: 40px;">普通　大阪梅田</option>
+    <option value="普通通塚口.jpg" style="font-size: 40px;">普通　塚口</option>
+    <option value="普通西宮北.jpg" style="font-size: 40px;">普通　西宮北口</option>
+    <option value="普通通夙川.jpg" style="font-size: 40px;">普通　夙川</option>
+    <option value="普通神戸三.jpg" style="font-size: 40px;">普通　神戸三宮</option>
+    <option value="普通高速神.jpg" style="font-size: 40px;">普通　高速神戸</option>
+    <option value="普通新開地.jpg" style="font-size: 40px;">普通　新開地</option>
+  </select>
+  <button id="showButton">起動</button>
+  <div class="slider-container">
+    <img id="sliderImage" src="" alt="画像を選択">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</ht
