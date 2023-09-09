@@ -1,0 +1,32 @@
+.bbs1101{
+    position: absolute;
+    align-items: center;
+    background: #3e3e3e;
+    color: #fff;
+    display: flex;
+    top:528px;
+    left:23px;
+    height: 90px;
+    line-height: 80px;
+    overflow:hidden;
+    width: 948px;
+    white-space:nowrap;
+    margin-top: 100px;
+    font-family: sans-serif;
+    z-index: 1;
+    }
+    .bbs1101 ul {
+    animation: flowing 60s linear infinite;
+    font-size: 80px;
+    transform:translateX(100%);
+    margin: 0;
+    padding: 0;
+    }
+    .bbs1101 ul li{
+    display: inline-block;
+    padding-right: 948px;
+    }
+    @keyframes flowing {
+    0% { transform:translateX(20%); }
+    100% { transform:translateX(-100%); }
+    }
