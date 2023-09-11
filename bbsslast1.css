@@ -1,0 +1,32 @@
+.bbsslast1{
+    position: absolute;
+    align-items: center;
+    background: #ff0;
+    color: #000;
+    display: flex;
+    top:477px;
+    left:23px;
+    height: 90px;
+    line-height: 80px;
+    overflow:hidden;
+    width: 948px;
+    white-space:nowrap;
+    margin-top: 100px;
+    font-family: sans-serif;
+    z-index: 1;
+    }
+    .bbsslast1 ul {
+    animation: flowing 30s linear infinite;
+    font-size: 70px;
+    transform:translateX(100%);
+    margin: 0;
+    padding: 0;
+    }
+    .bbsslast1 ul li{
+    display: inline-block;
+    padding-right: 950px;
+    }
+    @keyframes flowing {
+    0% { transform:translateX(20%); }
+    100% { transform:translateX(-100%); }
+    }
