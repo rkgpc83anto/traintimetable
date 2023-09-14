@@ -21,7 +21,7 @@ function displayFavorites() {
     }
   } else {
     const li = document.createElement("li");
-    li.textContent = "お気に入り商品はありません";
+    li.textContent = "お気に入り登録された駅はありません";
     favoriteList.appendChild(li);
   }
 }
