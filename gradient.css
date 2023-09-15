@@ -1,4 +1,9 @@
 .gradient {
 	background:linear-gradient(180deg,#ff8800 0%,#ff8800 50%,#0f5aa4 50%,#0f5aa4 100%);
-	width:980px;
+}
+.gradient1 {
+	background:linear-gradient(180deg,#ffba00 0%,#ffba00 50%,#0072ba 50%,#0072ba 100%);
+}
+.gradient2 {
+	background:linear-gradient(180deg,#e73042 0%,#e73042 50%,#3b7293 50%,#3b7293 100%);
 }

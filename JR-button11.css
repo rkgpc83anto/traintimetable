@@ -1,181 +1,271 @@
-.JR-button24{
-    position:absolute;
-    top: 505.1px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button24 {
+  position: absolute;
+  top: 505.1px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button25{
-    position:absolute;
-    top: 734.3px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button25 {
+  position: absolute;
+  top: 734.3px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button26{
-    position:absolute;
-    top: 860.3px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button26 {
+  position: absolute;
+  top: 860.3px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button27{
-    position:absolute;
-    top: 987.8px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button27 {
+  position: absolute;
+  top: 987.8px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button28{
-    position:absolute;
-    top: 1115.9px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button28 {
+  position: absolute;
+  top: 1115.9px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button44{
-    position:absolute;
-    top: 1525.6px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button44 {
+  position: absolute;
+  top: 1525.6px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button45{
-    position:absolute;
-    top: 1754.2px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button45 {
+  position: absolute;
+  top: 1754.2px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button46{
-    position:absolute;
-    top: 1881.2px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button46 {
+  position: absolute;
+  top: 1881.2px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button47{
-    position:absolute;
-    top: 2008.5px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button47 {
+  position: absolute;
+  top: 2008.5px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button48{
-    position:absolute;
-    top: 2135.5px;
-    left: 251px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button48 {
+  position: absolute;
+  top: 2135.5px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button64 {
+  position: absolute;
+  top: 2545.6px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button65 {
+  position: absolute;
+  top: 2774.2px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button66 {
+  position: absolute;
+  top: 2901.2px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button67 {
+  position: absolute;
+  top: 3028.5px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button68 {
+  position: absolute;
+  top: 3155.5px;
+  left: 251px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
 
 
-.JR-button11{
-    position:absolute;
-    top: 505.1px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button11 {
+  position: absolute;
+  top: 505.1px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button12{
-    position:absolute;
-    top: 734.3px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button12 {
+  position: absolute;
+  top: 734.3px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button13{
-    position:absolute;
-    top: 860.3px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button13 {
+  position: absolute;
+  top: 860.3px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button14{
-    position:absolute;
-    top: 987.8px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button14 {
+  position: absolute;
+  top: 987.8px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button15{
-    position:absolute;
-    top: 1115.9px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button15 {
+  position: absolute;
+  top: 1115.9px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button31{
-    position:absolute;
-    top: 1525.6px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button31 {
+  position: absolute;
+  top: 1525.6px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button32{
-    position:absolute;
-    top: 1754.2px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button32 {
+  position: absolute;
+  top: 1754.2px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button33{
-    position:absolute;
-    top: 1881.2px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button33 {
+  position: absolute;
+  top: 1881.2px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button34{
-    position:absolute;
-    top: 2008.5px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button34 {
+  position: absolute;
+  top: 2008.5px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
 
-.JR-button35{
-    position:absolute;
-    top: 2135.5px;
-    left: 611px;
-    width: 360px;
-    height: 120px;
-    z-index:1;
+.JR-button35 {
+  position: absolute;
+  top: 2135.5px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button51 {
+  position: absolute;
+  top: 2545.6px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button52 {
+  position: absolute;
+  top: 2774.2px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button53 {
+  position: absolute;
+  top: 2901.2px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button54 {
+  position: absolute;
+  top: 3028.5px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
+}
+
+.JR-button55 {
+  position: absolute;
+  top: 3155.5px;
+  left: 611px;
+  width: 360px;
+  height: 120px;
+  z-index: 1;
 }
