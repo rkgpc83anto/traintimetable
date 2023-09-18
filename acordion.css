@@ -1,0 +1,42 @@
+
+    
+    .accordion {
+        max-width: 400px; /* メニューの最大幅を設定 */
+        margin: 10px auto;
+        font-family: Arial, sans-serif;margin: 0;padding: 0;position: absolute;top: 10px;left: 677px;
+        z-index:10;
+    }
+    
+    /* アコーディオンアイテムのスタイル */
+    .accordion-item {
+        width: 100%; /* アコーディオンアイテムの横幅を100%に設定 */
+        border: 5px solid #0f5aa4;
+        margin-bottom: 10px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    .accordion-title {
+        background-color: #0f5aa4;
+        color: #fff;
+        border-color: #fff;
+        border: 5px;
+        font-size: 50px;
+        font-family: sans-serif;
+        padding: 10px;
+        text-align: right;
+        cursor: pointer;
+    }
+    
+    .accordion-content {
+        padding: 0px;
+        background-color: #fff;
+        color: #0f5aa4;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: sans-serif;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
