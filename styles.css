@@ -11,10 +11,10 @@ body {
     font-size: 60px;
   }
   
-  #sliderImage {
-    max-width: 100%;
-    height: auto;
-    font-size: 60px;
+  .slider-image {
+    max-width: 900px; /* 最大幅を970pxに制限 */
+    width: 100%; /* 幅を100%に設定して親要素に合わせる */
+    height: auto; /* アスペクト比を保つために高さを自動調整 */
   }
   
   button {
@@ -27,4 +27,11 @@ body {
     border: none;
     cursor: pointer;
   }
+
+
+
+  
+
+  
+
   
