@@ -19,7 +19,7 @@
     .accordion-title {
         background-color: #0f5aa4;
         color: #fff;
-        border-color: #fff;
+        border-color: #0f5aa4;
         border: 5px;
         font-size: 50px;
         font-family: sans-serif;
@@ -30,7 +30,7 @@
     
     .accordion-content {
         padding: 0px;
-        background-color: #fff;
+        background-color: #ded5c0;
         color: #0f5aa4;
         font-size: 60px;
         font-weight: bold;
