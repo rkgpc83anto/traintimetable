@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>LEDシュミレーター</title>
+    <style>
+        /* 各画像コンテナのスタイル */
+.image-container1 {
+    position: absolute; /* 位置を絶対位置に設定 */
+    left: 10px; /* 左からの距離（適宜調整） */
+    top: 280px; /* 上からの距離（適宜調整） */
+}
+.image-container2 {
+    position: absolute; /* 位置を絶対位置に設定 */
+    left: 10px; /* 左からの距離（適宜調整） */
+    top:700px; /* 上からの距離（適宜調整） */
+}
+.image-container3 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 1120px; /* 上からの距離（適宜調整） */
+ }
+ .image-container4 {
+   position: absolute; /* 位置を絶対位置に設定 */
+   left: 10px; /* 左からの距離（適宜調整） */
+   top: 1540px; /* 上からの距離（適宜調整） */
+}
+.image-container5 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 270px; /* 左からの距離（適宜調整） */
+  top: 1540px; /* 上からの距離（適宜調整） */
+}
+.image-container6 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 1960px; /* 上からの距離（適宜調整） */
+}
+.image-container7 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 470px; /* 左からの距離（適宜調整） */
+  top: 1960px; /* 上からの距離（適宜調整） */
+}
+.image-container8 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 2380px; /* 上からの距離（適宜調整） */
+}
+.image-container9 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 2800px; /* 上からの距離（適宜調整） */
+}
+.image-container10 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 3220px; /* 上からの距離（適宜調整） */
+}
+.image-container11 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 3640px; /* 上からの距離（適宜調整） */
+}
+.image-container12 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 4060px; /* 上からの距離（適宜調整） */
+}
+.image-container13 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 4480px; /* 上からの距離（適宜調整） */
+}
+.image-container14 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 4900px; /* 上からの距離（適宜調整） */
+}
+.image-container15 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 5320px; /* 上からの距離（適宜調整） */
+}
+    </style>
+</head>
+<body style="background-color:#451722;width:970px;font-size:40px;font-family: sans-serif;font-weight: bold;color: #ded5c0;">
+    <h1 style="text-align: center;font-size:70px;">LEDシュミレーター</h1>
+
+    <!-- 1つ目の画像選択要素 -->
+    <label for="imageSelect1">阪急神戸線:</label>
+    <select style="font-size:40px;" id="imageSelect1" onchange="displaySelectedImage(1)">
+      <option value="特急新開地.jpg"selected>特急　新開地</option>
+      <option value="特急高速神.jpg">特急　高速神戸</option>
+      <option value="特急大阪梅.jpg">特急　大阪梅田</option>
+      <option value="通特新開地.jpg">通特　新開地</option>
+      <option value="通特高速神.jpg">通特　高速神戸</option>
+      <option value="通特神戸三.jpg">通特　神戸三宮</option>
+      <option value="通特大阪梅.jpg">通特　大阪梅田</option>
+      <option value="準特新開地.jpg">準特　新開地</option>
+      <option value="準特高速神.jpg">準特　高速神戸</option>
+      <option value="準特大阪梅.jpg">準特　急大阪梅田</option>
+      <option value="急行新開地.jpg">急行　新開地</option>
+      <option value="急行神戸三.jpg">急行　神戸三宮</option>
+      <option value="急行大阪梅.jpg">急行　大阪梅田</option>
+      <option value="通急神戸三.jpg">通急　神戸三宮</option>
+      <option value="通急大阪梅.jpg">通急　大阪梅田</option>
+      <option value="普通新開地.jpg">普通　新開地</option>
+      <option value="普通高速神.jpg">普通　高速神戸</option>
+      <option value="普通神戸三.jpg">普通　神戸三宮</option>
+      <option value="普通通夙川.jpg">普通　夙川</option>
+      <option value="普通西宮北.jpg">普通　西宮北口</option>
+      <option value="普通通塚口.jpg">普通　塚口</option>
+      <option value="普通大阪梅.jpg">普通　大阪梅田</option>
+      <option value="普通通伊丹.jpg">普通　伊丹</option>
+      <option value="普通通今津.jpg">普通　今津</option>
+      <option value="普通通宝塚.jpg">普通　宝塚</option>
+      <option value="普通甲陽園.jpg">普通　甲陽園</option>
+        
+        <!-- 他の選択肢を追加できます -->
+    </select>
+    
+    <div class="image-container1" id="imageContainer1">
+        <img style="width: 960px;height:320px;" id="selectedImage1" src="特急新開地.jpg" alt="このLED幕はありません">
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- 2つ目の画像選択要素 -->
+    <label for="imageSelect2">阪急宝塚線:</label>
+    <select style="font-size:40px;" id="imageSelect2" onchange="displaySelectedImage(2)">
+        <option value="特日日生中.jpg">特日　日生中央</option>
+        <option value="特日大阪梅.jpg">特日　大阪梅田</option>
+        <option value="通特大阪梅.jpg">通特　大阪梅田</option>
+        <option value="急行行宝塚.jpg"selected>急行　宝塚</option>
+        <option value="急行雲雀丘.jpg">急行　雲雀丘花屋敷</option>
+        <option value="急行大阪梅.jpg">急行　大阪梅田</option>
+        <option value="準急大阪梅.jpg">準急　大阪梅田</option>
+        <option value="普通通宝塚.jpg">普通　宝塚</option>
+        <option value="普通雲雀丘.jpg">普通　雲雀丘花屋敷</option>
+        <option value="普通川西能.jpg">普通　川西能勢口</option>
+        <option value="普通通池田.jpg">普通　池田</option>
+        <option value="普通石橋阪.jpg">普通　石橋阪大前</option>
+        <option value="普通通豊中.jpg">普通　豊中</option>
+        <option value="普通大阪梅.jpg">普通　大阪梅田</option>
+        <option value="普通通箕面.jpg">普通　箕面</option>
+        <!-- 他の選択肢を追加できます -->
+    </select>
+    
+    <div class="image-container2" id="imageContainer2">
+        <img style="width: 960px;height:320px;" id="selectedImage2" src="急行行宝塚.jpg" alt="このLED幕はありません">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <!-- 2つ目の画像選択要素 -->
+        <label for="imageSelect3">阪急京都線:</label>
+        <select style="font-size:40px;" id="imageSelect3" onchange="displaySelectedImage(3)">
+            <option value="快特京都河.jpg">快特　京都河原町</option>
+            <option value="快特大阪梅.jpg">快特　大阪梅田</option>
+            <option value="特急京都河.jpg"selected>特急　京都河原町</option>
+            <option value="特急大阪梅.jpg">特急　大阪梅田</option>
+            <option value="通特京都河.jpg">通特　京都河原町</option>
+            <option value="通特大阪梅.jpg">通特　大阪梅田</option>
+            <option value="準特京都河.jpg">準特　京都河原町</option>
+            <option value="準特大阪梅.jpg">準特　大阪梅田</option>
+            <option value="急行京都河.jpg">急行　京都河原町</option>
+            <option value="急行大阪梅.jpg">急行　大阪梅田</option>
+            <option value="準急京都河.jpg">準急　京都河原町</option>
+            <option value="準急大阪梅.jpg">準急　大阪梅田</option>
+            <option value="普通京都河.jpg">普通　京都河原町</option>
+            <option value="普通通桂桂.jpg">普通　桂</option>
+            <option value="普通高槻市.jpg">普通　高槻市</option>
+            <option value="普通茨木市.jpg">普通　茨木市</option>
+            <option value="普通通淡路.jpg">普通　淡路</option>
+            <option value="普通大阪梅.jpg">普通　大阪梅田</option>
+            <option value="普通北千里.jpg">普通　北千里</option>
+            <!-- 他の選択肢を追加できます -->
+        </select>
+        
+        <div class="image-container3" id="imageContainer3">
+            <img style="width: 960px;height:320px;" id="selectedImage3" src="特急京都河.jpg" alt="このLED幕はありません">
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- 2つ目の画像選択要素 -->
+    <label for="imageSelect4">阪神本線:</label>
+    <select style="font-size:40px;" id="imageSelect4" onchange="displaySelectedImage(4)">
+        <option value="赤特.jpg">直特(赤)</option>
+        <option value="黄特.jpg">直特(黄)</option>
+        <option value="特急.jpg">特急</option>
+        <option value="通特.jpg">通特</option>
+        <option value="準特.jpg">準特</option>
+        <option value="Ｓ特.jpg">Ｓ特</option>
+        <option value="青急.jpg">快急(青)</option>
+        <option value="赤急.jpg">快急(赤)</option>
+        <option value="区急.jpg">区急</option>
+        <option value="神急.jpg">急行(阪神)</option>
+        <option value="急急.jpg">急行(阪急)</option>
+        <option value="通急.jpg">通急(阪急)</option>
+        <option value="神普.jpg">普通(阪神)</option>
+        <option value="急普.jpg">普通(阪急)</option>
+
+        
+        <!-- 他の選択肢を追加できます -->
+    </select>
+    <select style="font-size:40px;" id="imageSelect5" onchange="displaySelectedImage(5)">
+      <option value="神大阪.jpg">阪神大阪梅田</option>
+      <option value="無大阪.jpg">大阪梅田</option>
+      <option value="急大阪.jpg">阪急大阪梅田</option>
+      <option value="尼尼崎.jpg">尼崎</option>
+      <option value="甲子園.jpg">甲子園</option>
+      <option value="西西宮.jpg">西宮</option>
+      <option value="御御影.jpg">御影</option>
+      <option value="石屋川.jpg">石屋川</option>
+      <option value="神三宮.jpg">阪神神戸三宮</option>
+      <option value="無三宮.jpg">神戸三宮</option>
+      <option value="急三宮.jpg">阪急神戸三宮</option>
+      <option value="元元町.jpg">元町</option>
+      <option value="高速神.jpg">高速神戸</option>
+      <option value="新開地.jpg">新開地</option>
+      <option value="東須磨.jpg">東須磨</option>
+      <option value="須磨浦.jpg">須磨浦公園</option>
+      <option value="東二見.jpg">東二見</option>
+      <option value="霞ヶ丘.jpg">霞ヶ丘</option>
+      <option value="飾飾磨.jpg">飾磨</option>
+      <option value="姫姫路.jpg">姫路</option>
+ <!-- 他の選択肢を追加できます -->
+  </select>
+    
+    <div class="image-container4" id="imageContainer4">
+        <img style="width: 260px;height:130px;" id="selectedImage4" src="赤特.jpg" alt="このLED幕はありません">
+    </div>
+    <div class="image-container5" id="imageContainer5">
+      <img style="width: 520px;height:130px;" id="selectedImage5" src="神大阪.jpg" alt="このLED幕はありません">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <!-- 2つ目の画像選択要素 -->
+        <label for="imageSelect6">JR:</label>
+        <select style="font-size:40px;" id="imageSelect6" onchange="displaySelectedImage(6)">
+          <option value="新快速.JPG"selected>Ａ新快速</option>
+          <option value="神快速.JPG">Ａ快速</option>
+          <option value="神普通.JPG">Ａ普通</option>
+          <option value="Ｂ新快.JPG">Ｂ新快速</option>
+          <option value="Ｂ快速.JPG">Ｂ快速</option>
+          <option value="Ｂ普通.JPG">Ｂ普通</option>
+          <option value="Ｆ普通.JPG">Ｆ普通</option>
+          <option value="直通快.JPG">Ｆ直通快速</option>
+          <option value="丹波路.JPG">Ｇ丹波路快速</option>
+          <option value="Ｇ区快.JPG">Ｇ区間快速</option>
+          <option value="Ｇ快速.JPG">Ｇ快速</option>
+          <option value="Ｇ普通.JPG">Ｇ普通</option>
+          <option value="Ｈ快速.JPG">Ｈ快速</option>
+          <option value="Ｈ区快.JPG">Ｈ区間快速</option>
+          <option value="Ｈ普通.JPG">Ｈ普通</option>
+          <option value="Ｏ普通.JPG">Ｏ普通</option>
+          <option value="Ｐ普通.JPG">Ｐ普通</option>
+          <option value="大和路.JPG">Ｑ大和路快速</option>
+          <option value="Ｑ区快.JPG">Ｑ区間快速</option>
+          <option value="紀州路.JPG">Ｒ紀州路快速</option>
+          <option value="Ｒ区快.JPG">Ｒ区間快速</option>
+          <option value="関空快.JPG">Ｓ関空快速</option>
+          <option value="Ｓ快速.JPG">Ｓ快速</option>
+              
+             <!-- 他の選択肢を追加できます -->
+        </select>
+        <select style="font-size:40px;" id="imageSelect7" onchange="displaySelectedImage(7)"><optgroup label="Ａ琵琶湖線・Ｂ湖西線">
+          <option value="敦賀.JPG">敦賀</option>
+          <option value="敦米.JPG">敦賀・米原</option>
+          <option value="近塩.JPG">近江塩津</option>
+          <option value="近今.JPG">近江今津</option>
+          <option value="長浜.JPG">長浜</option>
+          <option value="米原.JPG">米原</option>
+          <option value="野洲.JPG">野洲</option>
+          <option value="草津.JPG">草津</option><optgroup label="Ａ京都線・神戸線">
+          <option value="京都.JPG">京都</option>
+          <option value="高槻.JPG">高槻</option>
+          <option value="吹田.JPG">吹田</option>
+          <option value="新阪.JPG">新大阪</option>
+          <option value="大阪.JPG"selected>大阪</option>
+          <option value="尼崎.JPG">尼崎</option>
+          <option value="甲子.JPG">甲子園口</option>
+          <option value="神戸J.JPG">神戸</option>
+          <option value="須磨.JPG">須磨</option>
+          <option value="明石.JPG">明石</option>
+          <option value="西明.JPG">西明石</option>
+          <option value="加古.JPG">加古川</option>
+          <option value="姫路.JPG">姫路</option>
+          <option value="網干.JPG">網干</option>
+          <option value="播州.JPG">播州赤穂</option>
+          <option value="上郡.JPG">上郡</option><optgroup label="Ｇ宝塚線">
+          <option value="塚口.JPG">塚口</option>
+          <option value="宝塚.JPG">宝塚</option>
+          <option value="新三.JPG">新三田</option>
+          <option value="篠山.JPG">篠山口</option>
+          <option value="福知.JPG">福知山</option>
+          <option value="豊岡.JPG">豊岡</option>
+          <option value="城崎.JPG">城崎温泉</option><optgroup label="Ｈ東西線・学研都市線">
+          <option value="京橋.JPG">京橋</option>
+          <option value="放出.JPG">放出</option>
+          <option value="四条.JPG">四条畷</option>
+          <option value="長尾.JPG">長尾</option>
+          <option value="松井.JPG">松井山手</option>
+          <option value="京田.JPG">京田辺</option>
+          <option value="同志.JPG">同志社前</option>
+          <option value="木津.JPG">木津</option>
+          <option value="奈良.JPG">奈良</option><optgroup label="Ｏ環状線・Ｐゆめ咲線">
+          <option value="京橋.JPG">京橋</option>
+          <option value="天寺.JPG">天王寺</option>
+          <option value="桜島.JPG">桜島</option><optgroup label="Ｑ大和路線">
+          <option value="奈良.JPG">奈良</option>
+          <option value="加茂.JPG">加茂</option>
+          <option value="加五.JPG">加茂/五条</option>
+          <option value="奈高.JPG">奈良/高田</option>
+          <option value="奈五.JPG">奈良/五条</option><optgroup label="Ｒ阪和線・Ｓ関西空港線">
+          <option value="天寺.JPG">天王寺</option>
+          <option value="鳳鳳.JPG">鳳</option>
+          <option value="東岸.JPG">東岸和田</option>
+          <option value="熊取.JPG">熊取</option>
+          <option value="日根.JPG">日根野</option>
+          <option value="関西.JPG">関西空港</option>
+          <option value="関和.JPG">関空/和歌山</option>
+          <option value="関海.JPG">関空/海南</option>
+          <option value="関湯.JPG">関空/湯浅</option>
+          <option value="関御.JPG">関空/御坊</option>
+          <option value="和歌.JPG">和歌山</option>
+          <option value="海南.JPG">海南</option>
+          <option value="湯浅.JPG">湯浅</option>
+          <option value="御坊.JPG">御坊</option>
+          <option value="紀田.JPG">紀伊田辺</option>
+          <option value="白浜.JPG">白浜</option>
+          <option value="新宮.JPG">新宮</option>
+
+
+
+            <!-- 他の選択肢を追加できます -->
+        </select>
+        
+        <div class="image-container6" id="imageContainer6">
+            <img style="width: 450px;height:150px;" id="selectedImage6" src="新快速.JPG" alt="このLED幕はありません">
+        </div>
+        <div class="image-container7" id="imageContainer7">
+          <img style="width: 450px;height:150px;" id="selectedImage7" src="大阪.JPG" alt="このLED幕はありません">
+      </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- 2つ目の画像選択要素 -->
+    <label for="imageSelect8">神戸電鉄:</label>
+    <select style="font-size:40px;" id="imageSelect8" onchange="displaySelectedImage(8)">
+      <option value=".jpg"></option>
+        <!-- 他の選択肢を追加できます -->
+    </select>
+    
+    <div class="image-container8" id="imageContainer8">
+        <img style="width: 960px;height:320px;" id="selectedImage8" src="急行三田.jpg" alt="このLED幕はありません">
+    </div>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- 2つ目の画像選択要素 -->
+    <label for="imageSelect9">御堂筋線:</label>
+    <select style="font-size:40px;" id="imageSelect9" onchange="displaySelectedImage(9)">
+      <option value="千里.JPG">千里中央</option>
+      <option value="江坂.JPG">江坂</option>
+      <option value="新大.JPG">新大阪</option>
+      <option value="中津.JPG">中津</option>
+      <option value="梅田.JPG"selected>梅田</option>
+      <option value="なん.JPG">なんば</option>
+      <option value="天王.JPG">天王寺</option>
+      <option value="あび.JPG">あびこ</option>
+      <option value="新金.JPG">新金岡</option>
+      <option value="中百.JPG">なかもず</option>
+      
+      <!-- 他の選択肢を追加できます -->
+    </select>
+    
+    <div class="image-container9" id="imageContainer9">
+        <img style="width: 960px;height:320px;" id="selectedImage9" src="梅田.JPG" alt="このLED幕はありません">
+    </div>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- 2つ目の画像選択要素 -->
+    <label for="imageSelect10">谷町線:</label>
+    <select style="font-size:40px;" id="imageSelect10" onchange="displaySelectedImage(10)">
+      <option value="大日.JPG">大日</option>
+      <option value="都島.JPG">都島</option>
+      <option value="文の.JPG">文の里</option>
+      <option value="喜連.JPG">喜連瓜破</option>
+      <option value="八尾.JPG">八尾南</option>
+
+        <!-- 他の選択肢を追加できます -->
+    </select>
+    
+    <div class="image-container10" id="imageContainer10">
+        <img style="width: 960px;height:320px;" id="selectedImage10" src="大日.JPG" alt="このLED幕はありません">
+    </div>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- 2つ目の画像選択要素 -->
+    <label for="imageSelect11">四つ橋線:</label>
+    <select style="font-size:40px;" id="imageSelect11" onchange="displaySelectedImage(11)">
+      <option value="住之.JPG">住之江公園</option>
+      <option value="北加.JPG">北加賀屋</option>
+        <!-- 他の選択肢を追加できます -->
+    </select>
+    
+    <div class="image-container11" id="imageContainer11">
+        <img style="width: 960px;height:320px;" id="selectedImage11" src="住之.JPG" alt="このLED幕はありません">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <!-- 2つ目の画像選択要素 -->
+        <label for="imageSelect12">西神・山手線:</label>
+        <select style="font-size:40px;" id="imageSelect12" onchange="displaySelectedImage(12)">
+          <option value="谷上.JPG">谷上</option>
+          <option value="新神.JPG">新神戸</option>
+          <option value="名谷.JPG">名谷</option>
+          <option value="西神.JPG"selected>西神中央</option>
+
+            <!-- 他の選択肢を追加できます -->
+        </select>
+        
+        <div class="image-container12" id="imageContainer12">
+            <img style="width: 960px;height:320px;" id="selectedImage12" src="西神.JPG" alt="このLED幕はありません">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <!-- 2つ目の画像選択要素 -->
+            <label for="imageSelect13">海岸線:</label>
+            <select style="font-size:40px;" id="imageSelect13" onchange="displaySelectedImage(13)">
+              <option value="御崎.JPG"selected>御崎公園</option>
+              <option value="新長.JPG">新長田</option>
+
+        <!-- 他の選択肢を追加できます -->
+            </select>
+            
+            <div class="image-container13" id="imageContainer13">
+                <img style="width: 960px;height:320px;" id="selectedImage13" src="新長.JPG" alt="このLED幕はありません">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+                <!-- 2つ目の画像選択要素 -->
+                <label for="imageSelect14">ポートライナー:</label>
+                <select style="font-size:40px;" id="imageSelect14" onchange="displaySelectedImage(14)">
+                  <option value="神戸.JPG">神戸空港</option>
+                  <option value="計算.JPG">計算科学センター</option>
+                  <option value="中埠.JPG">中埠頭</option>
+                  <option value="北埠.JPG">北埠頭</option>
+        
+                    <!-- 他の選択肢を追加できます -->
+                </select>
+                
+                <div class="image-container14" id="imageContainer14">
+                    <img style="width: 960px;height:320px;" id="selectedImage14" src="神戸.JPG" alt="このLED幕はありません">
+                </div>
+
+    <script>
+        function displaySelectedImage(index) {
+            var selectBox = document.getElementById("imageSelect" + index);
+            var selectedImage = document.getElementById("selectedImage" + index);
+            var imageContainer = document.getElementById("imageContainer" + index);
+
+            var selectedValue = selectBox.value;
+            selectedImage.src = selectedValue;
+
+            // 画像が選択されたときに画像コンテナを表示
+            imageContainer.style.display = "block";
+        }
+    </script>
+</body>
+</html>
