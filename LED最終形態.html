@@ -7,81 +7,122 @@
         /* 各画像コンテナのスタイル */
 .image-container1 {
     position: absolute; /* 位置を絶対位置に設定 */
-    left: 10px; /* 左からの距離（適宜調整） */
-    top: 280px; /* 上からの距離（適宜調整） */
+    left: 90px; /* 左からの距離（適宜調整） */
+    top: 340px; /* 上からの距離（適宜調整） */
+    z-index:10;
 }
 .image-container2 {
     position: absolute; /* 位置を絶対位置に設定 */
-    left: 10px; /* 左からの距離（適宜調整） */
-    top:700px; /* 上からの距離（適宜調整） */
+    left: 90px; /* 左からの距離（適宜調整） */
+    top:760px; /* 上からの距離（適宜調整） */
+    z-index:10;
 }
 .image-container3 {
   position: absolute; /* 位置を絶対位置に設定 */
-  left: 10px; /* 左からの距離（適宜調整） */
-  top: 1120px; /* 上からの距離（適宜調整） */
+  left: 90px; /* 左からの距離（適宜調整） */
+  top: 1180px; /* 上からの距離（適宜調整） */
+  z-index:10;
  }
  .image-container4 {
    position: absolute; /* 位置を絶対位置に設定 */
    left: 10px; /* 左からの距離（適宜調整） */
-   top: 1540px; /* 上からの距離（適宜調整） */
+   top: 1540px;/* 上からの距離（適宜調整） */
+   z-index:10;
 }
 .image-container5 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 270px; /* 左からの距離（適宜調整） */
   top: 1540px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container6 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 1960px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container7 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 470px; /* 左からの距離（適宜調整） */
   top: 1960px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container8 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 2380px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container9 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 2800px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container10 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 3220px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container11 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 3640px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container12 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 4060px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container13 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 4480px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container14 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 4900px; /* 上からの距離（適宜調整） */
+  z-index:10;
 }
 .image-container15 {
   position: absolute; /* 位置を絶対位置に設定 */
   left: 10px; /* 左からの距離（適宜調整） */
   top: 5320px; /* 上からの距離（適宜調整） */
+  z-index:10;
+}
+
+.led1 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 280px; /* 上からの距離（適宜調整） */
+  z-index:1;
+}
+.led2 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 700px; /* 上からの距離（適宜調整） */
+  z-index:1;
+}
+.led3 {
+  position: absolute; /* 位置を絶対位置に設定 */
+  left: 10px; /* 左からの距離（適宜調整） */
+  top: 1120px; /* 上からの距離（適宜調整） */
+  z-index:1;
 }
     </style>
 </head>
+<img style="width: 960px;height:320px;" class="led1" src="阪急幕.jpg">
+<img style="width: 960px;height:320px;" class="led2" src="阪急幕.jpg">
+<img style="width: 960px;height:320px;" class="led3" src="阪急幕.jpg">
+
+
+
+
 <body style="background-color:#451722;width:970px;font-size:40px;font-family: sans-serif;font-weight: bold;color: #ded5c0;">
     <h1 style="text-align: center;font-size:70px;">LEDシュミレーター</h1>
 
@@ -119,7 +160,7 @@
     </select>
     
     <div class="image-container1" id="imageContainer1">
-        <img style="width: 960px;height:320px;" id="selectedImage1" src="特急新開地.jpg" alt="このLED幕はありません">
+        <img style="width: 800px;height:200px;" id="selectedImage1" src="特急新開地.jpg" alt="このLED幕はありません">
     </div>
 <br>
 <br>
@@ -150,7 +191,7 @@
     </select>
     
     <div class="image-container2" id="imageContainer2">
-        <img style="width: 960px;height:320px;" id="selectedImage2" src="急行行宝塚.jpg" alt="このLED幕はありません">
+        <img style="width: 800px;height:200px;" id="selectedImage2" src="急行行宝塚.jpg" alt="このLED幕はありません">
     </div>
 
     <br>
@@ -186,7 +227,7 @@
         </select>
         
         <div class="image-container3" id="imageContainer3">
-            <img style="width: 960px;height:320px;" id="selectedImage3" src="特急京都河.jpg" alt="このLED幕はありません">
+            <img style="width: 800px;height:200px;" id="selectedImage3" src="特急京都河.jpg" alt="このLED幕はありません">
         </div>
 <br>
 <br>
