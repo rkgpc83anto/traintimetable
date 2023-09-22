@@ -5,16 +5,75 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 
-<title>神戸線大阪梅田駅休日発車案内</title>
+<title>阪急神戸線大阪梅田駅休日発車案内</title>
 <div style="background-color:#0f5aa4; text-align: center;width: 980px;">
     <h1>
         <font color="white" face="sans-serif"><span style="font-size:80px;">大阪梅田駅　休日発車案内</span><br><br><br><br></font>
     </h1>
 </div>
-<button style="background-color:#0f5aa4; color: #fff; font-family:sans-serif;" class="smartphone-button05"><a href="トップページスマホ版.html" style="color:#fff;">駅を変更</a></button>
+<button style="background-color:#0f5aa4; color: #fff; font-family:sans-serif;" class="smartphone-button05"><a href="トップページスマホ版.html" style="color:#fff;">駅を検索</a></button>
 <button style="background-color:#0080ff; color: #fff; font-family:sans-serif;" class="smartphone-button06"><a href="神大阪梅田.html" style="color:#fff;">平</a></button>
-<button style="background-color:#ffaa00; color: #fff; font-family:sans-serif;" class="smartphone-button08"><a href="休宝大阪梅田.html" style="color:#fff;">宝</a></button>
-<button style="background-color:#009a0a; color: #fff; font-family:sans-serif;" class="smartphone-button09"><a href="休京大阪梅田.html" style="color:#fff;">京</a></button>
+<button style="background-color:#00f; color: #fff; font-family:sans-serif;" class="smartphone-button08"><a href="梅田乗換.html" style="color:#fff;">乗換</a></button>
+<button class="favorite" style="padding: 0%;border: 0cm;" id="favoriteButton" onclick="toggleFavorite()">
+    <!-- お気に入りボタンの画像を指定 -->
+    <img src="お気に入り登録.jpg" alt="お気に入り登録">
+  </button>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="favorite.css">
+    <link rel="stylesheet" type="text/css" href="img.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-jikan01.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button05.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button06.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button07.css">
+    <link rel="stylesheet" type="text/css" href="smartphone-button08.css">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="/android-chrome-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/android-chrome-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="/android-chrome-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/android-chrome-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/android-chrome-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/android-chrome-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="/icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/icon-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/icon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="/icon-196x196.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/icon-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/icon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="/icon-24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/icon-192x192.png">
+    
+  </head>
+  <script src="favoritesub.js"></script>
 <span class="smartphone-jikan01">
     <p id="Clock1" style="display: inline"></p>
     <script src="時間表示.js"></script>
@@ -123,8 +182,7 @@
 
 <div class="bbs110">
     <ul>
-        <li><span style="color:#fff">車内での、携帯電話による通話はご遠慮ください。なお、優先座席付近では、混雑時には携帯電話の電源をお切りください。</li>
-        <li>皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。</li>
+        <li>皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の荷物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。</li>
         <li>お年寄りや、お体の不自由な方、妊婦の方、小さなお子様をお連れの方には<span style='color:red;'>座席をお譲り下さい</span>。皆様のご協力をお願いします。</li>
       </ul>
 </div>
