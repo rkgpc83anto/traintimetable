@@ -1,0 +1,71 @@
+.nosesmartphone-senpatsu1{
+    position:absolute;
+    top: 385px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-jihatsu1{
+    position:absolute;
+    top: 690px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-jijihatsu1{
+    position:absolute;
+    top: 890px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-jijijihatsu1{
+    position:absolute;
+    top: 1090px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-senpatsu2{
+    position:absolute;
+    top: 1440px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-jihatsu2{
+    position:absolute;
+    top: 1740px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-jijihatsu2{
+    position:absolute;
+    top: 1940px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
+
+.nosesmartphone-jijijihatsu2{
+    position:absolute;
+    top: 2140px;
+    left: 50px;
+    font-size :115px;
+    font-family:Arial;
+    z-index:1;
+}
